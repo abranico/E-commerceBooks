@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Link to="/">Home</Link>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
+      <Navbar />
 
       {children}
     </>
