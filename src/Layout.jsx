@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const Layout = ({ children }) => {
   return (
     <>
-      <Link href="/">Home</Link>
-      <Link href="/login">Login</Link>
-      <Link href="/register">Register</Link>
+      <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
 
       {children}
     </>
