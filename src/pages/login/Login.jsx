@@ -1,6 +1,7 @@
 import { FaSquareGithub, FaFacebook } from "react-icons/fa6";
 import { FaGooglePlusG } from "react-icons/fa";
 import { useState } from "react";
+import Register from "./components/Register";
 
 const Login = () => {
   const [toggleMenu, setTogleMenu] = useState(false);
@@ -9,7 +10,7 @@ const Login = () => {
     setTogleMenu(value);
   };
   return (
-    <form className="flex  m-auto w-full h-screen overflow-hidden ">
+    <div className="flex  m-auto w-full h-screen overflow-hidden ">
       <div className="w-1/2 bg-white flex flex-col justify-center items-center p-8">
         <div className="text-center mb-8">
           <i className="text-xl font-bold text-gray-700">E-commersBooks</i>
@@ -42,24 +43,28 @@ const Login = () => {
           </button>
         </div>
 
-        <div className="w-full flex flex-col items-center mb-4">
-          <div className="flex flex-col w-3/4 mb-6">
-            <input
-              type="email"
-              id="email"
-              placeholder="Email"
-              className="border rounded-md mb-4 p-2 focus:outline-none focus:border-blue-500"
-            />
-            <input
-              type="text"
-              placeholder="Password"
-              className="border rounded-md p-2 focus:outline-none focus:border-blue-500"
-            />
-          </div>
-          <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-3/4 mb-4">
-            Continuar
-          </button>
-        </div>
+        {toggleMenu ? (
+          <Register />
+        ) : (
+          <form className="w-full flex flex-col items-center mb-4">
+            <div className="flex flex-col w-3/4 mb-6">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                className="border rounded-md mb-4 p-2 focus:outline-none focus:border-blue-500"
+              />
+              <input
+                type="text"
+                placeholder="Password"
+                className="border rounded-md p-2 focus:outline-none focus:border-blue-500"
+              />
+            </div>
+            <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-3/4 mb-4">
+              Continuar
+            </button>
+          </form>
+        )}
 
         <div className="text-gray-500 text-sm mb-2">Continuar con</div>
         <div className="flex justify-center gap-4 mb-6">
@@ -94,7 +99,7 @@ const Login = () => {
           className="w-full h-full object-cover"
         />
       </div>
-    </form>
+    </div>
   );
 };
 
