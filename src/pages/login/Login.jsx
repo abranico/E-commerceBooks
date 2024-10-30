@@ -10,7 +10,7 @@ const Login = () => {
     setTogleMenu(value);
   };
   return (
-    <div className="flex  m-auto w-full h-screen overflow-hidden ">
+    <div className="flex m-auto w-full  ">
       <div className="w-1/2 bg-white flex flex-col justify-center items-center p-8">
         <div className="text-center mb-8">
           <i className="text-xl font-bold text-gray-700">E-commersBooks</i>

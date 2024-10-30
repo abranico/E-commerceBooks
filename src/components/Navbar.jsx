@@ -3,7 +3,7 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md sticky top-0">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-black">
