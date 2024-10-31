@@ -59,13 +59,13 @@ const Login = () => {
                 className="border rounded-md p-2 focus:outline-none focus:border-blue-500"
               />
             </div>
-            <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-3/4 mb-4">
-              Continuar
+            <button className="bg-blue-600 text-white rounded-md py-2 px-6 w-1/4 mb-4">
+              CONTINUAR
             </button>
           </form>
         )}
 
-        <div className="text-gray-500 text-sm mb-4">Continuar con</div>
+        <div className="text-gray-500 text-sm mt-2 mb-4">Continuar con</div>
         <div className="flex justify-center gap-4 mb-6">
           <button className="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-all duration-100 transform hover:scale-110 active:bg-red-500">
             <FaFacebook />
@@ -81,13 +81,22 @@ const Login = () => {
         </div>
 
         <div className="text-gray-400 text-xs flex gap-4">
-          <a href="#" className="hover:underline">
+          <a
+            href="#"
+            className="hover:text-amber-800 transition-colors duration-200"
+          >
             Términos y condiciones
           </a>
-          <a href="#" className="hover:underline">
+          <a
+            href="#"
+            className="hover:text-amber-800 transition-colors duration-200"
+          >
             Ayuda
           </a>
-          <a href="#" className="hover:underline">
+          <a
+            href="#"
+            className="hover:text-amber-800 transition-colors duration-200"
+          >
             Privacidad y política
           </a>
         </div>

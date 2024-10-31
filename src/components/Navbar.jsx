@@ -22,17 +22,22 @@ const Navbar = () => {
         {/* Menú de navegación */}
         <ul className="flex items-center space-x-6 text-sm font-medium">
           <li>
-            <Link to="/login" className="hover:text-orange-500">
+            <Link to="/login" className="hover:text-amber-400">
               Acceder / Registrarme
             </Link>
           </li>
           <li>
-            <Link to="" className="flex items-center hover:text-orange-500">
+            <Link to="" className="flex items-center hover:text-amber-400">
               Lista de deseos <FaHeart className="ml-2" />
             </Link>
           </li>
           <li>
-            <Link to="" className="flex items-center hover:text-orange-500">
+            <Link to="" className="flex items-center hover:text-amber-400">
+              Contactos
+            </Link>
+          </li>
+          <li>
+            <Link to="" className="flex items-center hover:text-amber-400">
               AR$ 0,00 <FaShoppingCart className="ml-2" />
             </Link>
           </li>

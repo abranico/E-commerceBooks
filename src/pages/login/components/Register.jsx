@@ -38,10 +38,10 @@ const Register = () => {
         />
       </div>
 
-      <div>
+      <div className="flex justify-center">
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          className="w-40  bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300"
         >
           INICIAR REGISTRO
         </button>
