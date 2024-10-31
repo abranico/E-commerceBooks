@@ -1,5 +1,4 @@
-import { FaSquareGithub, FaFacebook } from "react-icons/fa6";
-import { FaGooglePlusG } from "react-icons/fa";
+import { FaGooglePlus, FaGithub, FaFacebook } from "react-icons/fa";
 import { useState } from "react";
 import Register from "./components/Register";
 
@@ -66,16 +65,18 @@ const Login = () => {
           </form>
         )}
 
-        <div className="text-gray-500 text-sm mb-2">Continuar con</div>
+        <div className="text-gray-500 text-sm mb-4">Continuar con</div>
         <div className="flex justify-center gap-4 mb-6">
-          <button className="bg-gray-100 p-3 rounded-full shadow-md">
-            <FaSquareGithub />
-          </button>
-          <button className="bg-gray-100 p-3 rounded-full shadow-md">
+          <button className="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-all duration-100 transform hover:scale-110 active:bg-red-500">
             <FaFacebook />
           </button>
-          <button className="bg-gray-100 p-3 rounded-full shadow-md">
-            <FaGooglePlusG />
+
+          <button className="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-all duration-100 transform hover:scale-110 active:bg-blue-500">
+            <FaGithub />
+          </button>
+
+          <button className="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition-all duration-100 transform hover:scale-110 active:bg-pink-500">
+            <FaGooglePlus />
           </button>
         </div>
 
@@ -84,7 +85,7 @@ const Login = () => {
             Términos y condiciones
           </a>
           <a href="#" className="hover:underline">
-            Disclosures
+            Ayuda
           </a>
           <a href="#" className="hover:underline">
             Privacidad y política
